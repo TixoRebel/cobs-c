@@ -85,7 +85,7 @@ extern "C" {
  *                 operation and the length of the result (that was written to
  *                 dst_buf_ptr)
  */
-cobs_encode_result cobs_encode(void * dst_buf_ptr, size_t dst_buf_len,
+cobs_encode_result cobs_c_encode(void * dst_buf_ptr, size_t dst_buf_len,
                                const void * src_ptr, size_t src_len);
 
 /* Decode a COBS byte string.
@@ -99,7 +99,7 @@ cobs_encode_result cobs_encode(void * dst_buf_ptr, size_t dst_buf_len,
  *                 operation and the length of the result (that was written to
  *                 dst_buf_ptr)
  */
-cobs_decode_result cobs_decode(void * dst_buf_ptr, size_t dst_buf_len,
+cobs_decode_result cobs_c_decode(void * dst_buf_ptr, size_t dst_buf_len,
                                const void * src_ptr, size_t src_len);
 
 #ifdef __cplusplus
